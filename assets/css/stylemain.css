@@ -1,0 +1,81 @@
+/* WHOLE PAGE STYLE */
+/*need to tell the broswer to ignore the padding in the overall width*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -END WHOLE PAGE STYLE- */
+
+/*BODY STYLE STARTS*/
+body{
+    color: #214b6d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*-BODY STYLE ENDS-*/
+
+/* HEADER STYLE STARTS */
+/*.header-fixed{
+    position: fixed;
+    width: 100%;
+    box-shadow: grey;
+}*/
+header{
+    padding: 20px 35px;
+    background-color: #214b6d;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-bottom: 6px;
+}
+/* apply style to the h1 tag in the <header> */
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: whitesmoke;
+}
+/* apply style to any <a> reference in the header element */
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* style to the nav element and moved it to the right side of the page */
+header nav{
+    margin: 7px 0;
+}
+/* add flexbox to the nav elements */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+/* styled the a elements in the header list */
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.2vw;
+}
+/* -HEADER STYLE ENDS- */
+
+/* SECTION STYLE STARTS */
+section{
+    padding: 60px;
+}
+/* -SECTION STYLE ENDS- */
+
+/*HERO STYLE SECTION START*/
+.hero{
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 700px;
+}
+/* -HERO STYLE SECTION ENDS- */
