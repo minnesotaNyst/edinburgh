@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: #214b6d;
+    --secondary-color: #0f5045;
+    --tertiary-color: #e49218;
+  }
 /* -END WHOLE PAGE STYLE- */
 
 /*BODY STYLE STARTS*/
@@ -15,17 +20,12 @@ body{
 /*-BODY STYLE ENDS-*/
 
 /* HEADER STYLE STARTS */
-/*.header-fixed{
-    position: fixed;
-    width: 100%;
-    box-shadow: grey;
-}*/
 header{
     padding: 20px 35px;
-    background-color: #214b6d;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* the -webkit-sticky is used to make sure other browsers can use the stylesheet */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -35,18 +35,6 @@ header{
     background-attachment: fixed;
     background-position: 80%;
 }
-/* apply style to the h1 tag in the <header> */
-header h1 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 36px;
-    color: #214b6d;
-}
-/* apply style to any <a> reference in the header element */
-header a{
-    text-decoration: none;
-    color: #214b6d;
-}
 /* style to the nav element and moved it to the right side of the page */
 header nav{
     margin: 7px 0;
@@ -55,17 +43,28 @@ header nav{
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
+.navigation{
+    justify-content: flex-end;
+}
 /* styled the a elements in the header list */
 header nav ul li a{
+    color: #214b6d;
     padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.2vw;
-    text-decoration: underline;
-}
+    font-weight: bolder;
+    font-size: 1.0vw;
+    text-decoration: none;
+    float: right;
+    text-shadow: 0 0 10px rgba(90, 86, 86, 0.247);
+}/* hover pseudo */
+header nav ul li a:hover {
+    background: rgba(33, 75, 109, 0.568);
+    color: whitesmoke;
+    border-radius: 10px;
+    text-shadow: none;
+  }
 /* -HEADER STYLE ENDS- */
 
 /* SECTION STYLE STARTS */
@@ -86,4 +85,27 @@ section{
     background-attachment: fixed;
     background-position: 80%;
 }
-/* -HERO STYLE SECTION ENDS- */
+.hero div p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5.0s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* the typing effect */
+  @keyframes typing {
+    from { width: 10% }
+    to { width: 90% }
+  }
+  
+  /* the typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  /* -HERO SECTION STYLE ENDS- */
