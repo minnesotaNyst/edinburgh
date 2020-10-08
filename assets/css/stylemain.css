@@ -92,12 +92,82 @@ section{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 5.0s steps(40, end),
+      typing 7.0s steps(40, end),
       blink-caret .75s step-end infinite;
   }
+  /* -HERO SECTION STYLE ENDS- */
 
-  /* the typing effect */
-  @keyframes typing {
+/* MY WORK STYLE SECTION */
+.mywork-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}  
+  .mywork-grid-container {
+    background: rgba(33, 75, 109, 0.568);
+    width: 80%;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid var(--secondary-color);
+    color:  var(--secondary-color);
+    font-size: 1.4rem;
+  }
+  .mywork-grid-item {
+    margin: 10px;
+    background-color: orange;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .mywork-grid-item.runbuddy{
+      margin: 10px;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      display: flex;
+  }
+  .mywork-grid-item.f-three{
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      width: 100%;
+      display: flex;
+      margin: 10px;
+  }
+  .mywork-grid-item.f-four{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.mywork-grid-item.f-one{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.mywork-grid-item.f-two{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.mywork-grid-item.f-five{
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+/* MEDIA QUERIES AND OTHER STYLING EFFECTS */
+   /* the typing effect */
+   @keyframes typing {
     from { width: 10% }
     to { width: 90% }
   }
@@ -107,5 +177,3 @@ section{
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
-
-  /* -HERO SECTION STYLE ENDS- */
