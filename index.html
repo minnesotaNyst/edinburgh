@@ -1,48 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="./assets/css/stylemain.css">
-    <title>Veni Vidi Vici</title>
-</head>
-<body>
-    <!-- put the header of your page here. this is where they will see your name and links to the different sections about you  -->
-    <div class="header-fixed">
-        <header class="name">
-            <h1>
-                <a href="./index.html">Jake W. Nystrom</a> <!-- TODO: change this to "/" when it gets published to keep the code clean -->
-            </h1>
-        <!-- put your navigation here, this will link the viewer to the rest of the webpage -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About</a>
-                </li>
-                <li>
-                    <a href="#my-work">Show Me</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
-        </header>
-    </div>
-    <!-- end navigation and header here -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="./assets/css/stylemain.css">
+        <title>Veni Vidi Vici</title>
+    </head>
+    <body>
+        <!-- put the header of your page here. this is where they will see your name and links to the different sections about you  -->
+        <!-- navigation and header section -->
+        <main class="header">
+            <header class="name">
+                <h1>
+                    <a href="./index.html">Jake W. Nystrom</a> <!-- TODO: change this to "/" when it gets published to keep the code clean -->
+                </h1>
+            <!-- put your navigation here, this will link the viewer to the rest of the webpage -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-me">About</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">Show Me</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+            </header>
+        </main>
+        <!-- end navigation and header here -->
 
-    <!-- hero/jumbotron section -->
-    <section class="hero">
-        <div>
-            <h2>Welcome to my portfolio...</h2>
-            <p>
-                Here is a little about me... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, nam adipisci? Fuga eveniet, distinctio architecto modi illo totam reiciendis consectetur ea, nisi eos, cumque qui. Repudiandae eaque sed hic suscipit.
-            </p>
-        </div>
-    </section>
-</body>
+        <!-- hero/jumbotron section -->
+        <section class="hero">
+            <div>
+                <h2>Welcome to my portfolio...</h2>
+                <p>
+                    Here is a little about me... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, nam adipisci? Fuga eveniet, distinctio architecto modi illo totam reiciendis consectetur ea, nisi eos, cumque qui. Repudiandae eaque sed hic suscipit.
+                </p>
+            </div>
+        </section>
+        <!-- hero/jumbotron section ends -->
+
+        <!-- my work section -->
+        <section id="my-work" class="mywork">
+            <h3 class="section-title">
+                Check It Out
+            </h3>
+            <div class="mywork-grid-wrapper">
+                <div class="mywork-grid-container">
+                    <!-- headers (if any) go here-->
+
+                    <!-- this is the main body where the six boxes will go using a grid container -->
+                    <div class="mywork-grid-item runbuddy">
+                        HTML/CSS
+                    </div>
+
+                    <div class="mywork-grid-item f-one">
+                        Future Project One
+                    </div>
+
+                    <div class="mywork-grid-item f-two">
+                        Future Project Two
+                    </div>
+
+                    <div class="mywork-grid-item f-three">
+
+                    </div>
+                        Future Project Three
+                    <div class="mywork-grid-item f-four">
+
+                    </div>
+
+                    <div class="mywork-grid-item f-five">
+                        Future Project Four
+                    </div>
+
+                    <div class="mywork-grid-item f-six">
+                        Future Project Five
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- my work section ends -->
+
+        <!-- contact me section -->
+        <section id="contact-me">
+            <div>
+                <h3>Contact Me</h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Phone</li>
+                    <li>E-Mail</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- contact me section ends -->
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-style">
+                &copy; 2020 Jake William Inc.
+            </div>
+        </footer>
+    </body>
 </html>
