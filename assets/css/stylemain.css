@@ -9,6 +9,7 @@
     --primary-color: #214b6d;
     --secondary-color: #0f5045;
     --tertiary-color: #e49218;
+    --light-text: rgb(209, 207, 207);
   }
 /* -END WHOLE PAGE STYLE- */
 
@@ -61,7 +62,7 @@ header nav ul li a{
 }/* hover pseudo */
 header nav ul li a:hover {
     background: rgba(33, 75, 109, 0.568);
-    color: whitesmoke;
+    color: rgb(209, 207, 207);
     border-radius: 10px;
     text-shadow: none;
   }
@@ -152,6 +153,124 @@ section{
       background-position: center;
       height: 500px;
   }
+  /* -MY WORK STYLE SECTION ENDS- */
+
+  /* CONTACT ME STYLE SECTION */
+  .contactme-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}  
+  .contactme-grid-container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    /* use the repeat syntax to create equal columns */
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    color:  var(--secondary-color);
+    font-size: 1.4rem;
+  }
+  /* create universal style for all of the grid items */
+  .contactme-grid-item {
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(90, 86, 86, 0.247);
+  }
+  /* create style for the grid container title, which will display vertically and in a larger font size */
+  .contactme-grid-item.title{
+      margin: 10px;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 3;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      border: none;
+      font-size: 200%;
+      font-weight: bolder;
+      letter-spacing: .5em;
+      box-shadow: none;
+      width: 200px;
+  }
+  /* create specific style for the grid item that will contain the email title and address */
+  .contactme-grid-item.email{
+      margin: 10px;
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 1;
+      display: flex;
+      background-size: cover;
+      background-position: center;
+  }
+  /* tell the email paragraph element to hide until the end user hovers over the email */
+  .contactme-grid-item.email p{
+    display: none;
+    padding: 20px;
+}
+/* when the cursor hovers over 'email', then display the paragraph element */
+  .contactme-grid-item.email:hover p{
+    display: block;
+    font-weight: bold;
+  }
+  .contactme-grid-item.phone{
+    margin: 10px;
+      grid-column: 4 / span 2;
+      grid-row: 2 / span 1;
+      display: flex;
+      background-size: cover;
+      background-position: center;
+  }
+  /* tell the paragraph element to hide in the phone class until the user hovers over the card */
+  .contactme-grid-item.phone p{
+    display: none;
+    padding: 20px;
+}
+/* when the cursor hovers over 'phone', then display the paragraph element */
+  .contactme-grid-item.phone:hover p{
+    display: block;
+    font-weight: bold;
+  }
+  .contactme-grid-item.linkedin{
+    margin: 10px;
+      grid-column: 6 / span 2;
+      grid-row: 2 / span 1;
+      display: flex;
+      background-size: cover;
+      background-position: center;
+  }
+   /* tell the paragraph element to hide in the linkedin class until the user hovers over the card */
+   .contactme-grid-item.linkedin a{
+    display: none;
+    padding: 20px;
+}
+/* when the cursor hovers over 'linkedin', then display the paragraph element */
+  .contactme-grid-item.linkedin:hover a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondary-color)
+  }
+  
+  /* -CONTACT ME STYLE SECTION ENDS- */
+
+  /* FOOTER STYLE SECTION */
+  footer{
+    background: var(--primary-color);
+    color: var(--light-text);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer h4{
+    font-weight: lighter;
+  }
+/* -FOOTER STYLE SECTION ENDS- */
 
 /* MEDIA QUERIES AND OTHER STYLING EFFECTS */
    /* the typing effect */
