@@ -204,6 +204,7 @@ section{
   text-align: center;
   border: 2px solid var(--secondary-color);
   box-shadow: 10px 10px 10px rgba(90, 86, 86, 0.247);
+  height: auto;
 }
 /* create style for the link that resides in the primary box for my projects, in this case 'run buddy' */
 /* TODO: add a pseudo to let the user know they've already navigated to this link */
@@ -377,6 +378,7 @@ footer h4{
         width: 100%;
         justify-content: center;
         text-align: center;
+        flex: 2 100%;
       }
       header nav ul li a {
         font-size: 20px;
@@ -391,14 +393,15 @@ footer h4{
       /* TODO: Left off here, this section isn't complete. Need to figure out these media queries... */
       .mywork-grid-container {
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         font-size: .7rem;
       }
       .mywork-grid-item.title{
-        grid-column: 1 / span 4;
+        grid-column: 1 / span 2;
         grid-row: 1 / span 1;
         writing-mode: horizontal-tb;
         transform: none;
+        text-align: center;
       }
       .mywork-grid-item.runbuddy{
         margin: 10px;
@@ -408,6 +411,7 @@ footer h4{
       }
       .mywork-grid-item{
         flex-wrap: wrap;
+        height: auto;
       }
       footer h4, footer div {
         text-align: center;
