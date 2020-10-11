@@ -11,6 +11,10 @@ While building this portfolio several different techniques were used. The end us
 As an aspiring developer, I hope that the end user will find themselves impressed with a simple desgin that eloquently outlines who I am as an individual. I intend to create a smooth transition between where the viewer is greeted through providing my contact information in a way they will easily understand.
 
 ### Task List
+-[x] About Me Article
+-[x] Project Section
+-[x] Contact Me Section
+-[x] Resume Link
 -[x] Use of Flexboxes
 -[x] Use of Grid layouts
 -[x] Use of CSS variables
