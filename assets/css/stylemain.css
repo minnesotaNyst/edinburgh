@@ -62,7 +62,7 @@ header nav ul li a{
 }/* hover pseudo */
 header nav ul li a:hover {
   background: rgba(33, 75, 109, 0.568);
-  color: rgb(209, 207, 207);
+  color: rgb(234, 234, 234);
   border-radius: 10px;
   text-shadow: none;
 }
@@ -162,19 +162,18 @@ section{
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  height: 855px;
+  height: 375px;
   background-attachment: fixed;
-  background-position: 80%;
+  background-position: 25% 65%;
 }
+
 .hero div p{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  white-space: nowrap;  /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-  typing 6.0s steps(40, end),
-  blink-caret .75s step-end infinite;
+  animation: typing 3.0s steps(40, end), blink-caret .75s step-end infinite;
 }
 /* -HERO SECTION STYLE ENDS- */
 
@@ -384,11 +383,13 @@ footer h4{
         font-size: 20px;
       }
       .hero div{
-        width: 100%;
+        width: 60%;
         flex-wrap: wrap;
       }
       .hero div p{
+        display: block;
         animation: none;
+        width:100%;
       }
       /* TODO: Left off here, this section isn't complete. Need to figure out these media queries... */
       .mywork-grid-container {
