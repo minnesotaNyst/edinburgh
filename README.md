@@ -19,10 +19,13 @@ As an aspiring developer, I hope that the end user will find themselves impresse
 -[x] Use of Grid layouts
 -[x] Use of CSS variables
 -[x] Use of Media Queries
-    **Note: Media queries have been implemented, however they are not functioning as expected. Addition development work is required.
+    **Note: Media queries have been implemented, but additional queries need to be added for even smaller screen sizes.
 -[] Add complete resume
--[] End user presented with name, recent photo and links to sections about me, my work and how to contact me
--[] The links properly scroll to the corresponding section
--[] The UI present the viewer with my first application
--[] When the viewer clicks on the application, they are taken to that deployed application
--[] The page resizes based on various screens and devices and am provided with a responsive layout
+-[x] End user presented with name, recent photo and links to sections about me, my work and how to contact me
+-[x] The links properly scroll to the corresponding section
+-[x] The UI present the viewer with my first application
+-[x] When the viewer clicks on the application, they are taken to that deployed application
+-[x] The page resizes based on various screens and devices and am provided with a responsive layout
+
+# Snapshot
+![](assets/images/jnportfolio.png)
