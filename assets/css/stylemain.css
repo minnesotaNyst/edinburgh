@@ -245,7 +245,7 @@ section {
 	gap: 10px;
 	padding: 10px;
 	/* use the repeat syntax to create equal columns */
-	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(9, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	color: var(--secondary-color);
 	font-size: 1.4rem;
@@ -327,6 +327,26 @@ section {
 }
 /* when the cursor hovers over 'linkedin', then display the paragraph element */
 .contactme-grid-item.linkedin:hover a {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+.contactme-grid-item.github {
+	margin: 10px;
+	grid-column: 8 / span 2;
+	grid-row: 2 / span 1;
+	display: flex;
+	background-size: cover;
+	background-position: center;
+}
+/* tell the paragraph element to hide in the linkedin class until the user hovers over the card */
+.contactme-grid-item.github a {
+	display: none;
+	padding: 20px;
+}
+/* when the cursor hovers over 'linkedin', then display the paragraph element */
+.contactme-grid-item.github:hover a {
 	display: block;
 	font-weight: bold;
 	text-decoration: none;
