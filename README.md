@@ -27,5 +27,9 @@ As an aspiring developer, I hope that the end user will find themselves impresse
 -[x] When the viewer clicks on the application, they are taken to that deployed application
 -[x] The page resizes based on various screens and devices and am provided with a responsive layout
 
+
+### Deployed Portfolio
+https://minnesotanyst.github.io/edinburgh/
+
 # Snapshot
 ![](assets/images/jnportfolio.png)
