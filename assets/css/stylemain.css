@@ -116,10 +116,10 @@ header nav ul li a:hover {
 	justify-content: center;
 	text-align: center;
 }
-.aboutme-title {
+.aboutme-grid-item.title {
 	margin: 10px;
 	grid-column: 1 / span 1;
-	grid-row: 1 / span 1;
+	grid-row: 1 / span 3;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
 	border: none;
@@ -127,7 +127,7 @@ header nav ul li a:hover {
 	font-weight: bolder;
 	letter-spacing: 0.5em;
 	box-shadow: none;
-	width: 200px;
+	width: 100px;
 }
 .aboutme-headshot {
 	background-image: url('../images/headshot.JPG');
@@ -166,12 +166,9 @@ header nav ul li a:hover {
 
 /* SECTION STYLE STARTS */
 section {
-	padding: 60px;
-}
-.section-title {
 	padding: 20px;
-	text-align: center;
 }
+
 /* -SECTION STYLE ENDS- */
 
 /* MY WORK STYLE SECTION */
@@ -202,14 +199,6 @@ section {
 	box-shadow: 10px 10px 10px rgba(90, 86, 86, 0.247);
 	height: auto;
 }
-/* create style for the link that resides in the primary box for my projects, in this case 'run buddy' */
-/* TODO: add a pseudo to let the user know they've already navigated to this link */
-/* TODO: add a gradient pseudo to these cards when the end user hovers over them */
-.mywork-grid-item.runbuddy a {
-	text-decoration: none;
-	color: var(--secondary-color);
-	font-size: 150%;
-}
 .mywork-grid-item.title {
 	margin: 10px;
 	grid-column: 1 / span 1;
@@ -221,8 +210,17 @@ section {
 	font-weight: bolder;
 	letter-spacing: 0.5em;
 	box-shadow: none;
-	width: 200px;
+	width: 100px;
 }
+/* create style for the link that resides in the primary box for my projects, in this case 'run buddy' */
+/* TODO: add a pseudo to let the user know they've already navigated to this link */
+/* TODO: add a gradient pseudo to these cards when the end user hovers over them */
+.mywork-grid-item.runbuddy a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-size: 150%;
+}
+
 .mywork-grid-item.runbuddy {
 	margin: 10px;
 	grid-column: 2 / span 2;
@@ -275,7 +273,7 @@ section {
 	font-weight: bolder;
 	letter-spacing: 0.5em;
 	box-shadow: none;
-	width: 200px;
+	width: 100px;
 }
 /* create specific style for the grid item that will contain the email title and address */
 .contactme-grid-item.email {
@@ -389,13 +387,13 @@ footer h4 {
 		font-size: 20px;
 	}
 	.hero div {
-		width: 60%;
 		flex-wrap: wrap;
+		justify-content: center;
+		display: flex;
 	}
 	.hero div p {
-		display: block;
-		animation: none;
 		width: 100%;
+		display: flex;
 	}
 	/* TODO: Left off here, this section isn't complete. Need to figure out these media queries... */
 	/* media query for the about me container */
@@ -404,25 +402,30 @@ footer h4 {
 		grid-template-rows: repeat(3, 1fr);
 		font-size: 0.7rem;
 	}
-	.aboutme-title {
+	.aboutme-grid-item.title {
 		grid-column: 1 / span 1;
 		grid-row: 1 / span 1;
 		writing-mode: horizontal-tb;
 		transform: none;
 		text-align: center;
 		width: 100%;
+		font-size: 350%;
 	}
 	.aboutme-headshot {
 		grid-column: 1 / span 1;
 		grid-row: 2 / span 1;
 		display: flex;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 49%;
 	}
 	.aboutme-bio {
 		grid-column: 1 / span 1;
 		grid-row: 3 / span 1;
 		display: flex;
+		font-size: 26px;
 	}
-	.aboutme-item {
+	.aboutme-grid-item {
 		flex-wrap: wrap;
 		height: auto;
 	}
@@ -439,16 +442,19 @@ footer h4 {
 		transform: none;
 		text-align: center;
 		width: 100%;
+		font-size: 350%;
 	}
 	.mywork-grid-item.runbuddy {
 		margin: 10px;
 		grid-column: 1 / span 2;
 		grid-row: 2 / span 2;
 		display: flex;
+		font-size: 26px;
 	}
 	.mywork-grid-item {
 		flex-wrap: wrap;
 		height: auto;
+		font-size: 26px;
 	}
 	/* media query for the contact me container */
 	.contactme-grid-container {
@@ -467,21 +473,25 @@ footer h4 {
 		transform: none;
 		text-align: center;
 		width: 100%;
+		font-size: 350%;
 	}
 	.contactme-grid-item.email {
 		grid-column: 1 / span 1;
 		grid-row: 2 / span 1;
 		display: flex;
+		font-size: 26px;
 	}
 	.contactme-grid-item.phone {
 		grid-column: 1 / span 1;
 		grid-row: 3 / span 1;
 		display: flex;
+		font-size: 26px;
 	}
 	.contactme-grid-item.linkedin {
 		grid-column: 1 / span 1;
 		grid-row: 4 / span 1;
 		display: flex;
+		font-size: 26px;
 	}
 	/* media query for the footer */
 	footer h4,
