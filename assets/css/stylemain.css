@@ -215,21 +215,28 @@ section {
 /* create style for the link that resides in the primary box for my projects, in this case 'run buddy' */
 /* TODO: add a pseudo to let the user know they've already navigated to this link */
 /* TODO: add a gradient pseudo to these cards when the end user hovers over them */
-.mywork-grid-item.runbuddy a {
+.mywork-grid-item.whateverworks a {
 	text-decoration: none;
 	color: var(--secondary-color);
 	font-size: 150%;
 }
 
-.mywork-grid-item.runbuddy {
+.mywork-grid-item.whateverworks {
 	margin: 10px;
 	grid-column: 2 / span 2;
 	grid-row: 1 / span 2;
 	display: flex;
-	background-image: url('../images/hero-bg.jpg');
+	background-image: url('../images/whateverWorks.png');
 	background-size: cover;
 	background-position: center;
 	height: 500px;
+}
+
+.mywork-grid-item.runbuddy {
+	background-image: url('../images/hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: auto;
 }
 /* -MY WORK STYLE SECTION ENDS- */
 
@@ -415,8 +422,6 @@ footer h4 {
 		width: 100%;
 		display: flex;
 	}
-	/* TODO: Left off here, this section isn't complete. Need to figure out these media queries... */
-	/* media query for the about me container */
 	.aboutme-container {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(3, 1fr);
@@ -519,4 +524,6 @@ footer h4 {
 		text-align: center;
 		width: 100%;
 	}
+
+	/* TODO: Add media queries for even smaller screens */
 }
