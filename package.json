@@ -1,29 +1,24 @@
 {
-  "name": "edinburgh",
-  "version": "1.0.0",
-  "description": "This is my portfolio",
-  "main": "index.js",
-  "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
-    "tailwind": "^4.0.0",
-    "tailwindcss": "^2.0.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/minnesotaNyst/edinburgh.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "Jake Nystrom",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/minnesotaNyst/edinburgh/issues"
-  },
-  "homepage": "https://github.com/minnesotaNyst/edinburgh#readme"
+	"name": "edinburgh",
+	"version": "1.0.0",
+	"description": "Welcome to my portfolio. Here you will find a few different key components. You will be greated with an animated intro that guides to you either use the navigation menu at the top of the page or manually working your way down the page. In short, I will introduce myself and follow up with a few examples of the work I have done through my time exploring full stack development. You will be left with my contact information in the event you'd like to reach out directly.",
+	"main": "index.js",
+	"scripts": {
+		"build-css": "tailwindcss build src/styles.css -o assets/css/styles.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/minnesotaNyst/edinburgh.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/minnesotaNyst/edinburgh/issues"
+	},
+	"homepage": "https://github.com/minnesotaNyst/edinburgh#readme",
+	"dependencies": {
+		"autoprefixer": "^10.0.4",
+		"postcss": "^8.1.10",
+		"tailwindcss": "^2.0.1"
+	}
 }
